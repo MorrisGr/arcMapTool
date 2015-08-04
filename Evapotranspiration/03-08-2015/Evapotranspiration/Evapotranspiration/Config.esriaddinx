@@ -1,0 +1,33 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Evapotranspiration</Name>
+  <AddInID>{79810e42-36bd-49d7-bb3c-6b070f8fb5af}</AddInID>
+  <Description>Type in a description for this Add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\Evapotranspiration.png</Image>
+  <Author>Dimitra Papadopoulou</Author>
+  <Company>Dimitra Papadopoulou</Company>
+  <Date>3/8/2015</Date>
+  <Targets>
+    <Target name="Desktop" version="10.2" />
+  </Targets>
+  <AddIn language="CLR" library="Evapotranspiration.dll" namespace="Evapotranspiration">
+    <ArcMap>
+      <Commands>
+        <Button id="Dimitra_Papadopoulou_Evapotranspiration_Station" class="Station" message="Station data" caption="Station" tip="Station data" category="Add-In Controls" image="Images\Station.png" />
+        <Button id="Dimitra_Papadopoulou_Evapotranspiration_Temperature" class="Temperature" message="Temperature data" caption="Temperature" tip="Temperature data" category="Add-In Controls" image="Images\Temperature.png" />
+        <Button id="Dimitra_Papadopoulou_Evapotranspiration_Precipitation" class="Precipitation" message="Precipitation data" caption="Precipitation" tip="Precipitation data" category="Add-In Controls" image="Images\Precipitation.png" />
+        <ComboBox id="Dimitra_Papadopoulou_Evapotranspiration_ET_Methods" class="ET_Methods" message="Methods for the estimation of evapotranspiration" caption="ET-Methods" tip="ET-Methods" category="Add-In Controls" image="Images\ET_Methods.png" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="Dimitra_Papadopoulou_Evapotranspiration_Evapotranspiration" caption="Evapotranspiration" showInitially="false">
+          <Items>
+            <Button refID="Dimitra_Papadopoulou_Evapotranspiration_Station" />
+            <Button refID="Dimitra_Papadopoulou_Evapotranspiration_Precipitation" />
+            <Button refID="Dimitra_Papadopoulou_Evapotranspiration_Temperature" />
+            <ComboBox refID="Dimitra_Papadopoulou_Evapotranspiration_ET_Methods" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

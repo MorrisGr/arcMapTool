@@ -40,5 +40,13 @@ namespace ArcMapAddin2
             //DataGridView1.DataSource = ds; // dataset
             //DataGridView1.DataMember = "TableName";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.label1.Text = folderBrowserDialog1.SelectedPath;
+            }
+        }
     }
 }

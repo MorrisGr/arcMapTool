@@ -8,3 +8,9 @@ C:\Users\d\Desktop\Διπλωματική\30-06-2015\ArcMapAddin2\ArcMapAddin2\o
 C:\Users\d\Desktop\Διπλωματική\30-06-2015\ArcMapAddin2\ArcMapAddin2\bin\Debug\Meteorological_Data.mdb
 C:\Users\d\Desktop\Διπλωματική\30-06-2015\ArcMapAddin2\ArcMapAddin2\bin\Debug\ArcMapAddin2.dll.config
 C:\Users\d\Desktop\Διπλωματική\30-06-2015\ArcMapAddin2\ArcMapAddin2\bin\Debug\ArcMapAddin2.esriAddIn
+C:\Users\d\Desktop\arcMapTool\ArcMapAddin2\obj\Debug\ArcMapAddin2.csprojResolveAssemblyReference.cache
+C:\Users\d\Desktop\arcMapTool\ArcMapAddin2\obj\Debug\ArcMapAddin2.Temperature.resources
+C:\Users\d\Desktop\arcMapTool\ArcMapAddin2\obj\Debug\ArcMapAddin2.Form1.resources
+C:\Users\d\Desktop\arcMapTool\ArcMapAddin2\obj\Debug\ArcMapAddin2.csproj.GenerateResource.Cache
+C:\Users\d\Desktop\arcMapTool\ArcMapAddin2\obj\Debug\ArcMapAddin2.dll
+C:\Users\d\Desktop\arcMapTool\ArcMapAddin2\obj\Debug\ArcMapAddin2.pdb

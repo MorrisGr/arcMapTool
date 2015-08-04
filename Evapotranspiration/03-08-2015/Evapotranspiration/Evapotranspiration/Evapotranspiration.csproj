@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E6205556-1D27-434D-A1BD-32D1B96EE7ED}</ProjectGuid>
+    <ProjectGuid>{32C0CB50-35F2-4C50-AAA8-93C68F7929C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArcMapAddin2</RootNamespace>
-    <AssemblyName>ArcMapAddin2</AssemblyName>
+    <RootNamespace>Evapotranspiration</RootNamespace>
+    <AssemblyName>Evapotranspiration</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -74,47 +74,45 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Neo.cs" />
     <Compile Include="Config.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Config.esriaddinx</DependentUpon>
     </Compile>
-    <Compile Include="DataSourceSpecial.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="ET_Methods.cs" />
+    <Compile Include="Precipitation.cs" />
+    <Compile Include="Prec_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Meteorological_DataDataSet.cs">
-      <DependentUpon>Meteorological_DataDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Meteorological_DataDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Meteorological_DataDataSet.xsd</DependentUpon>
+    <Compile Include="Prec_Form.Designer.cs">
+      <DependentUpon>Prec_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
+    <Compile Include="Station_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station_Form.Designer.cs">
+      <DependentUpon>Station_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temperature.cs" />
+    <Compile Include="Temp_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp_Form.Designer.cs">
+      <DependentUpon>Temp_Form.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <AddInContent Include="Config.esriaddinx">
       <Generator>ArcGISAddInHostGenerator</Generator>
       <LastGenOutput>Config.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </AddInContent>
   </ItemGroup>
   <ItemGroup>
-    <AddInContent Include="Images\ArcMapAddin2.png" />
+    <AddInContent Include="Images\Evapotranspiration.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button1.cs" />
-    <AddInContent Include="Images\Button1.png" />
+    <Compile Include="Station.cs" />
+    <AddInContent Include="Images\Station.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ESRI.ArcGIS.ArcMapUI">
@@ -139,33 +137,24 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <AddInContent Include="Images\Temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\Precipitation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\ET_Methods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Prec_Form.resx">
+      <DependentUpon>Prec_Form.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AddInContent Include="Images\ArcGISAddin1.png" />
-    <Content Include="Meteorological_Data.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Meteorological_DataDataSet.xsc">
-      <DependentUpon>Meteorological_DataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Meteorological_DataDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Meteorological_DataDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Meteorological_DataDataSet.xss">
-      <DependentUpon>Meteorological_DataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    <EmbeddedResource Include="Station_Form.resx">
+      <DependentUpon>Station_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp_Form.resx">
+      <DependentUpon>Temp_Form.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <ZipFileExtension>esriAddIn</ZipFileExtension>
